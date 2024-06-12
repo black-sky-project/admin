@@ -14,6 +14,7 @@ function MentorCreateForm() {
 		await postMentor({name: username, password: password, login: login, bio: bio, departmentId: department});
 	}
 
+	// TODO: Parse departments
 	return (
 		<div>
 			<p>Create Mentor</p>

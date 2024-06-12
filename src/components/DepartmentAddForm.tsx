@@ -11,6 +11,7 @@ function DepartmentAddForm() {
 		await postDepartment({universityId: universityId, name: name});
 	}
 
+	// TODO: Parse universities
 	return (
 		<div>
 			<p>Add Department</p>
@@ -23,7 +24,7 @@ function DepartmentAddForm() {
 				</div>
 				<div>
 					<label>
-						Name:
+						University ID:
 						<input type="text" value={universityId} onChange={(e) => setUniversityId(e.target.value)}/>
 					</label>
 				</div>

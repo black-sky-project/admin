@@ -14,6 +14,7 @@ function StudentCreateForm() {
 		await postStudent({name: username, password: password, login: login, acquiringDegree: degree, departmentId: department});
 	}
 
+	// TODO: Parse degree and departments.
 	return (
 		<div>
 			<p>Create Student</p>
