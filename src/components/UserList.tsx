@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import {UserDto} from "../dtos/userDtos.ts";
 import {deleteUser, getAllUsers} from "../controllers/userController.ts";
-import '../styles/UserList.css'
+import '../styles/EntityList.css'
 
 
 function UserList() {
