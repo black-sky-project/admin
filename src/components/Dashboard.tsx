@@ -4,6 +4,8 @@ import UserList from './UserList.tsx';
 import AdminCreateForm from './UserCreateForm/AdminCreateForm.tsx';
 import StudentCreateForm from './UserCreateForm/StudentCreateForm.tsx';
 import MentorCreateForm from './UserCreateForm/MentorCreateForm.tsx';
+import UniversityAddForm from "./UniversityAddForm.tsx";
+import DepartmentAddForm from "./DepartmentAddForm.tsx";
 
 function Dashboard() {
 	const [activeForm, setActiveForm] = useState('admin');
@@ -25,11 +27,15 @@ function Dashboard() {
 					<option value="admin">Create Admin</option>
 					<option value="student">Create Student</option>
 					<option value="mentor">Create Mentor</option>
+					<option value="university">Add University</option>
+					<option value="department">Add Department</option>
 				</select>
 			</div>
 			{activeForm === 'admin' && <AdminCreateForm/>}
 			{activeForm === 'student' && <StudentCreateForm/>}
 			{activeForm === 'mentor' && <MentorCreateForm/>}
+			{activeForm === 'university' && <UniversityAddForm/>}
+			{activeForm === 'department' && <DepartmentAddForm/>}
 		</>
 	);
 }

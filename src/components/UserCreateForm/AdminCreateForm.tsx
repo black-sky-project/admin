@@ -34,7 +34,7 @@ function AdminCreateForm() {
 						<input type="login" value={login} onChange={(e) => setLogin(e.target.value)}/>
 					</label>
 				</div>
-				<button type="submit">Login</button>
+				<button type="submit">Create</button>
 			</form>
 		</div>
 )

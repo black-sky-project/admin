@@ -48,7 +48,7 @@ function MentorCreateForm() {
 						<input type="text" value={department} onChange={(e) => setDepartment(e.target.value)}/>
 					</label>
 				</div>
-				<button type="submit">Login</button>
+				<button type="submit">Create</button>
 			</form>
 		</div>
 	)
