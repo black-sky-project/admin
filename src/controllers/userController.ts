@@ -38,7 +38,9 @@ export const postAdmin = async (adminData: postAdminDto) => {
 
 export const deleteUser = async(id: number) => {
 	const response = await userClient.delete('/api/v1/users/delete', {
-		params: id
+		params: {
+			id: id,
+		}
 	});
 	return response.data;
 }

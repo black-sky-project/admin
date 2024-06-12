@@ -1,12 +1,14 @@
+enum degree { Bachelor, Master }
+
 export interface CourseDto {
 	id: number;
-	degree: Degree;
+	degree: degree;
 	name: string;
 	departmentId: number;
 }
 
 export interface PostCourseDto {
-	degree: Degree;
+	degree: degree;
 	name: string;
 	departmentId: number;
 }
