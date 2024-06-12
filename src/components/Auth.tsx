@@ -1,6 +1,6 @@
 import '../styles/Auth.css'
 import {useState} from "react";
-import axios from 'axios'
+import {login} from "../controllers/authController.ts";
 
 interface AuthProps {
 	setIsAuthenticated: (isAuthenticated: boolean) => void;
@@ -15,15 +15,8 @@ function Auth({setIsAuthenticated}: AuthProps) {
 		e.preventDefault();
 
 		try {
-			const response = await axios.post('/api/v1/auth/login', {
-				'login': username,
-				'password': password,
-			});
-
-			const token: string = response.data;
-			console.log(response.data);
+			const token = await login({login: username, password: password});
 			localStorage.setItem('authToken', token);
-			console.log(localStorage.getItem('authToken'));
 			setIsAuthenticated(true);
 		} catch (error) {
 			setError('Login failed. Please check your credentials and try again.');
