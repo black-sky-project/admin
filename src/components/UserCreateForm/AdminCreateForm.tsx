@@ -13,7 +13,7 @@ function AdminCreateForm() {
 	}
 
 	return (
-		<div>
+		<div className="create-form-container">
 			<p>Create Admin</p>
 			<form onSubmit={handleCreateAdmin}>
 				<div>

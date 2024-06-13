@@ -30,7 +30,7 @@ function UserList() {
 	}
 
 	return (
-		<div>
+		<div className="list-container">
 			<ul>
 				{users.map((user) => (
 					<li key={user.id}>

@@ -1,0 +1,20 @@
+.create-form-container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.create-form-container ul {
+    padding: 0;
+}
+
+.create-form-container li {
+    margin-bottom: 10px;
+}
+
+.create-form-container form > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+}

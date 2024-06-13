@@ -6,7 +6,7 @@ export const getUniversities = async() => {
 }
 
 export const postUniversity = async (universityName: string) => {
-	const response = await userClient.post('/api/v1/users/new/mentor', universityName);
+	const response = await userClient.post('/api/v1/universities/new', universityName);
 	return response.data;
 }
 

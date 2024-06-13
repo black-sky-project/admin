@@ -11,7 +11,7 @@ function UniversityAddForm() {
 	}
 
 	return (
-		<div>
+		<div className="create-form-container">
 			<p>Add University</p>
 			<form onSubmit={handleCreateUniversity}>
 				<div>

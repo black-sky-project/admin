@@ -16,7 +16,7 @@ function MentorCreateForm() {
 
 	// TODO: Parse departments
 	return (
-		<div>
+		<div className="create-form-container">
 			<p>Create Mentor</p>
 			<form onSubmit={handleCreateMentor}>
 				<div>

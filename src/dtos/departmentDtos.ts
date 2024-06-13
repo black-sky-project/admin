@@ -1,10 +1,10 @@
 export interface DepartmentDto {
 	id: number
-	universityId: number;
+	universityId: string;
 	name: string;
 }
 
 export interface PostDepartmentDto {
-	universityId: number;
+	universityId: string;
 	name: string;
 }

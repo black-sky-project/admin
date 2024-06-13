@@ -16,7 +16,7 @@ function StudentCreateForm() {
 
 	// TODO: Parse degree and departments.
 	return (
-		<div>
+		<div className="create-form-container">
 			<p>Create Student</p>
 			<form onSubmit={handleCreateStudent}>
 				<div>

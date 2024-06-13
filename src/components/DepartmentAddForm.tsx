@@ -13,7 +13,7 @@ function DepartmentAddForm() {
 
 	// TODO: Parse universities
 	return (
-		<div>
+		<div className="create-form-container">
 			<p>Add Department</p>
 			<form onSubmit={handleAddDepartment}>
 				<div>

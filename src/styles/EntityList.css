@@ -1,3 +1,29 @@
-li {
+.list-container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.list-container ul {
     list-style-type: none;
+    padding: 0;
+}
+
+.list-container li {
+    margin-bottom: 10px;
+}
+
+.list-container li > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.list-container li > div button {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
 }

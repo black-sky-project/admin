@@ -30,7 +30,7 @@ function UniversityList() {
 	}
 
 	return (
-		<div>
+		<div className="list-container">
 			<ul>
 				{universities.map((university) => (
 					<li key={university.id}>

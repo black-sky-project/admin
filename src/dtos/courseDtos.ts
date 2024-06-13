@@ -10,5 +10,5 @@ export interface CourseDto {
 export interface PostCourseDto {
 	degree: degree;
 	name: string;
-	departmentId: number;
+	departmentId: string;
 }

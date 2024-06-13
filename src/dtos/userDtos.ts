@@ -33,7 +33,7 @@ export interface postStudentDto {
 	password: string;
 	name: string;
 	acquiringDegree: degree;
-	departmentId: number;
+	departmentId: string;
 }
 
 export interface postMentorDto {
@@ -41,7 +41,7 @@ export interface postMentorDto {
 	password: string;
 	name: string;
 	bio: string;
-	departmentId: number;
+	departmentId: string;
 }
 
 export interface postAdminDto {
